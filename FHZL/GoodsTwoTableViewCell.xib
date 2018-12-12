@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="GoodsTwoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="促销" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-Ke-cly">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="53" id="Bjf-AK-jLF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="满2件，总价打八折；可得100积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jX-or-G2Z">
+                        <frame key="frameInset" minX="48" width="246" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Y-Rd-Lzx">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Zlx-u9-jGk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2jieping.png" translatesAutoresizingMaskIntoConstraints="NO" id="FOf-vb-4Ai">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FOf-vb-4Ai" secondAttribute="height" id="vCF-lh-z5T"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3jX-or-G2Z" secondAttribute="bottom" id="4WB-14-B3t"/>
+                    <constraint firstItem="Z6Y-Rd-Lzx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FNo-iT-rdq"/>
+                    <constraint firstItem="hfn-Ke-cly" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GWd-ob-dLb"/>
+                    <constraint firstItem="hfn-Ke-cly" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="K5d-jW-0Co"/>
+                    <constraint firstItem="FOf-vb-4Ai" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VEM-Ee-rLm"/>
+                    <constraint firstItem="FOf-vb-4Ai" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="W8z-o8-Hbd"/>
+                    <constraint firstAttribute="bottom" secondItem="Z6Y-Rd-Lzx" secondAttribute="bottom" id="Y7L-lz-Qwd"/>
+                    <constraint firstAttribute="bottom" secondItem="FOf-vb-4Ai" secondAttribute="bottom" constant="8" id="c8p-35-qWb"/>
+                    <constraint firstItem="3jX-or-G2Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hqB-mC-pZq"/>
+                    <constraint firstAttribute="bottom" secondItem="hfn-Ke-cly" secondAttribute="bottom" id="i8I-Qn-8JO"/>
+                    <constraint firstAttribute="trailing" secondItem="Z6Y-Rd-Lzx" secondAttribute="trailing" id="mu8-dk-pae"/>
+                    <constraint firstItem="3jX-or-G2Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="48" id="nZm-eJ-MOh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ImageView" destination="FOf-vb-4Ai" id="AqR-e6-g5r"/>
+                <outlet property="bodyLabel" destination="3jX-or-G2Z" id="05C-3R-p4H"/>
+                <outlet property="nameLabel" destination="hfn-Ke-cly" id="hRx-et-wLp"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="56"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="2jieping.png" width="39" height="38"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="NewBiaoTiCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mef-Z1-iVW">
+                        <rect key="frame" x="8" y="8" width="84.5" height="84.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mef-Z1-iVW" secondAttribute="height" id="uik-YP-OZ3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tix-XI-PtC">
+                        <rect key="frame" x="100.5" y="8" width="214.5" height="71"/>
+                        <string key="text">经过三年的磨炼，主人公终于成长为一个顶天立地的男子汉，无所畏惧，自省自强。经过三年的磨炼，主人公终于成长为一个顶天立地的男子汉，无所畏惧，自省自强。经过三年的磨炼，主人公终于成长为一个顶天立地的男子汉，无所畏惧，自省自强。经过三年的磨炼，主人公终于成长为一个顶天立地的男子汉，无所畏惧，自省自强。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ue-PJ-paj">
+                        <rect key="frame" x="0.0" y="100.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="T9F-X0-8TM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJm-qc-7qE">
+                        <rect key="frame" x="90" y="69" width="66" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="NI7-dK-eci"/>
+                            <constraint firstAttribute="height" constant="32" id="bpA-LK-fcy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="编辑" image="编辑">
+                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="editClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5A7-zc-saQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp6-X5-TcV">
+                        <rect key="frame" x="158" y="69" width="66" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="删除" image="圆角矩形3">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="deleClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xgs-ao-czc"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tix-XI-PtC" firstAttribute="leading" secondItem="mef-Z1-iVW" secondAttribute="trailing" constant="8" id="3yg-vI-ZZ2"/>
+                    <constraint firstItem="8Ue-PJ-paj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8fP-fy-ug2"/>
+                    <constraint firstAttribute="bottom" secondItem="mef-Z1-iVW" secondAttribute="bottom" constant="9" id="9Cw-4m-D8l"/>
+                    <constraint firstAttribute="trailing" secondItem="tix-XI-PtC" secondAttribute="trailing" constant="5" id="Cj0-RS-O0C"/>
+                    <constraint firstItem="mef-Z1-iVW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Jse-Zm-5Yx"/>
+                    <constraint firstItem="mef-Z1-iVW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Lvd-zH-nIv"/>
+                    <constraint firstItem="cp6-X5-TcV" firstAttribute="height" secondItem="XJm-qc-7qE" secondAttribute="height" id="M0I-yH-7xk"/>
+                    <constraint firstItem="tix-XI-PtC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MQt-jt-kef"/>
+                    <constraint firstItem="XJm-qc-7qE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="NS5-xz-C6S"/>
+                    <constraint firstItem="XJm-qc-7qE" firstAttribute="bottom" secondItem="mef-Z1-iVW" secondAttribute="bottom" constant="8.5" id="OLm-2g-cXh"/>
+                    <constraint firstAttribute="trailing" secondItem="8Ue-PJ-paj" secondAttribute="trailing" id="S5K-uk-Rwb"/>
+                    <constraint firstItem="cp6-X5-TcV" firstAttribute="centerY" secondItem="XJm-qc-7qE" secondAttribute="centerY" id="Ss1-pe-bGa"/>
+                    <constraint firstAttribute="bottom" secondItem="8Ue-PJ-paj" secondAttribute="bottom" id="Xgf-EC-q6t"/>
+                    <constraint firstItem="cp6-X5-TcV" firstAttribute="leading" secondItem="XJm-qc-7qE" secondAttribute="trailing" constant="2" id="anK-rF-YD0"/>
+                    <constraint firstItem="XJm-qc-7qE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tix-XI-PtC" secondAttribute="bottom" constant="-10" id="nt3-iF-PdR"/>
+                    <constraint firstItem="cp6-X5-TcV" firstAttribute="width" secondItem="XJm-qc-7qE" secondAttribute="width" id="rwa-GU-Scb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleButton" destination="cp6-X5-TcV" id="61r-ti-50Z"/>
+                <outlet property="descriptionLabel" destination="tix-XI-PtC" id="fOR-yW-MkV"/>
+                <outlet property="editButton" destination="XJm-qc-7qE" id="OZ7-Wl-4qb"/>
+                <outlet property="pictureView" destination="mef-Z1-iVW" id="A9f-iU-1HH"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="63"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="圆角矩形3" width="13" height="14"/>
+        <image name="编辑" width="13" height="13"/>
+    </resources>
+</document>

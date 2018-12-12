@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogisticsVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bn-T7-ijL">
+                    <rect key="frame" x="103" y="70" width="169" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="Ges-B0-9yf"/>
+                        <constraint firstAttribute="height" constant="35" id="Tdg-4B-17x"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="物流号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jby-00-Qw1">
+                    <rect key="frame" x="48" y="79" width="47" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="erk-xs-dzO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQE-LE-I3J">
+                    <rect key="frame" x="277" y="67.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SQE-LE-I3J" secondAttribute="height" id="7Ia-3F-BBl"/>
+                        <constraint firstAttribute="height" constant="40" id="O8F-mK-aL7"/>
+                    </constraints>
+                    <state key="normal" image="扫描_N.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可直接扫描物流码上传订单号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-LA-610">
+                    <rect key="frame" x="103" y="113" width="159.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf8-8S-cfs">
+                    <rect key="frame" x="111" y="172" width="152" height="39"/>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.59607843137254901" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="152" id="OVo-dP-3sU"/>
+                        <constraint firstAttribute="height" constant="39" id="gY0-ff-MDs"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SQE-LE-I3J" firstAttribute="centerY" secondItem="jby-00-Qw1" secondAttribute="centerY" id="22k-M3-xID"/>
+                <constraint firstItem="6bn-T7-ijL" firstAttribute="centerY" secondItem="jby-00-Qw1" secondAttribute="centerY" id="EKk-6l-O0T"/>
+                <constraint firstItem="SQE-LE-I3J" firstAttribute="leading" secondItem="6bn-T7-ijL" secondAttribute="trailing" constant="5" id="GQE-t6-5e4"/>
+                <constraint firstItem="hf8-8S-cfs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IRf-uI-RAu"/>
+                <constraint firstItem="JjK-LA-610" firstAttribute="leading" secondItem="6bn-T7-ijL" secondAttribute="leading" id="Jdl-Kb-SVl"/>
+                <constraint firstItem="6bn-T7-ijL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O2e-Bl-NMp"/>
+                <constraint firstItem="hf8-8S-cfs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TO2-n2-Xfb"/>
+                <constraint firstItem="6bn-T7-ijL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="Yhj-EN-926"/>
+                <constraint firstItem="hf8-8S-cfs" firstAttribute="top" secondItem="JjK-LA-610" secondAttribute="bottom" constant="44.5" id="Zpq-rg-iRT"/>
+                <constraint firstItem="JjK-LA-610" firstAttribute="top" secondItem="6bn-T7-ijL" secondAttribute="bottom" constant="8" id="cFc-Xq-0we"/>
+                <constraint firstItem="6bn-T7-ijL" firstAttribute="leading" secondItem="jby-00-Qw1" secondAttribute="trailing" constant="8" id="gYs-Xk-ad5"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="扫描_N.png" width="52" height="52"/>
+    </resources>
+</document>

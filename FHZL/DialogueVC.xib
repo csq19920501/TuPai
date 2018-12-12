@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogueVC">
+            <connections>
+                <outlet property="circleButton" destination="584-Rs-6md" id="YL4-IX-Jsx"/>
+                <outlet property="helpTableview" destination="0NL-qG-ezu" id="ety-bQ-zq7"/>
+                <outlet property="soundImage" destination="a5q-Sn-mNM" id="RkW-Zu-VA9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voicenaci_sound0.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5q-Sn-mNM">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="VF7-SI-FgM"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="584-Rs-6md">
+                    <rect key="frame" x="147.5" y="587" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Jnc-K9-t2b"/>
+                        <constraint firstAttribute="width" constant="80" id="KbH-zO-Pvc"/>
+                    </constraints>
+                    <state key="normal" image="主界面_语音_N.png"/>
+                    <connections>
+                        <action selector="cirlceButtonClick:" destination="-1" eventType="touchUpInside" id="xwb-Vs-PJa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZ7-ET-s1g">
+                    <rect key="frame" x="374" y="64" width="1" height="523"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="LHX-QR-ben"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0NL-qG-ezu">
+                    <rect key="frame" x="0.0" y="260" width="375" height="327"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="W9j-O0-nIC"/>
+                        <outlet property="delegate" destination="-1" id="TWq-7y-LZc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a5q-Sn-mNM" secondAttribute="bottom" id="4T7-E6-02k"/>
+                <constraint firstAttribute="bottom" secondItem="584-Rs-6md" secondAttribute="bottom" id="9wp-ke-IUt"/>
+                <constraint firstItem="584-Rs-6md" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DYj-o5-i28"/>
+                <constraint firstItem="OZ7-ET-s1g" firstAttribute="height" secondItem="0NL-qG-ezu" secondAttribute="height" multiplier="1.6" id="HI1-YR-JHe"/>
+                <constraint firstItem="a5q-Sn-mNM" firstAttribute="top" secondItem="OZ7-ET-s1g" secondAttribute="bottom" id="MSK-3T-oKW"/>
+                <constraint firstAttribute="trailing" secondItem="a5q-Sn-mNM" secondAttribute="trailing" id="Sfb-03-S3o"/>
+                <constraint firstAttribute="trailing" secondItem="OZ7-ET-s1g" secondAttribute="trailing" id="Yy5-oo-O70"/>
+                <constraint firstItem="0NL-qG-ezu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c74-d3-njP"/>
+                <constraint firstItem="a5q-Sn-mNM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dhC-zm-4LK"/>
+                <constraint firstAttribute="trailing" secondItem="0NL-qG-ezu" secondAttribute="trailing" id="eC0-1I-6Vy"/>
+                <constraint firstItem="a5q-Sn-mNM" firstAttribute="top" secondItem="0NL-qG-ezu" secondAttribute="bottom" id="pXd-0h-lGK"/>
+                <constraint firstItem="OZ7-ET-s1g" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="qqi-4X-Uxg"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="voicenaci_sound0.png" width="480" height="36"/>
+        <image name="主界面_语音_N.png" width="253" height="253"/>
+    </resources>
+</document>

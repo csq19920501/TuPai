@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="TupaiNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新疆阿克苏冰糖心苹果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-cU-m7i">
+                        <rect key="frame" x="74" y="13" width="143" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:15" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-gs-6y8">
+                        <rect key="frame" x="276" y="13" width="37" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="0oS-1T-RYL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120*120.png" translatesAutoresizingMaskIntoConstraints="NO" id="zwK-Wf-UEN">
+                        <rect key="frame" x="9" y="11" width="57" height="57"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zwK-Wf-UEN" secondAttribute="height" multiplier="1:1" id="NJ1-GI-6jT"/>
+                            <constraint firstAttribute="width" constant="57" id="Uet-Vg-rUc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲还在吗？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym2-Gg-DRO">
+                        <rect key="frame" x="74" y="42" width="67" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yVg-gs-6y8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ygp-cU-m7i" secondAttribute="trailing" constant="8" id="KQ4-3h-Q2b"/>
+                    <constraint firstItem="zwK-Wf-UEN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NBF-Kr-R4J"/>
+                    <constraint firstItem="yVg-gs-6y8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Vo0-CL-bvJ"/>
+                    <constraint firstItem="zwK-Wf-UEN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="eSG-wh-qzY"/>
+                    <constraint firstItem="Ygp-cU-m7i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="izg-IQ-4Z3"/>
+                    <constraint firstItem="ym2-Gg-DRO" firstAttribute="leading" secondItem="zwK-Wf-UEN" secondAttribute="trailing" constant="8" id="nwr-rh-vzd"/>
+                    <constraint firstItem="ym2-Gg-DRO" firstAttribute="top" secondItem="Ygp-cU-m7i" secondAttribute="bottom" constant="12" id="rja-48-U0k"/>
+                    <constraint firstAttribute="trailing" secondItem="yVg-gs-6y8" secondAttribute="trailing" constant="7" id="td8-R1-cTc"/>
+                    <constraint firstItem="Ygp-cU-m7i" firstAttribute="leading" secondItem="zwK-Wf-UEN" secondAttribute="trailing" constant="8" id="vLF-Q3-gRl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="25" y="70"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="120*120.png" width="180" height="180"/>
+    </resources>
+</document>
