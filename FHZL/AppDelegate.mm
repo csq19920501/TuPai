@@ -100,9 +100,7 @@
 }
 //设置极光分享
 -(void)setShare{
-    
-    
-    
+
     //除微信QQ其他key都是错误未曾设置的
     JSHARELaunchConfig *config = [[JSHARELaunchConfig alloc] init];
     config.appKey = @"817683c767bcd4eb4dc5e80a";
@@ -122,52 +120,6 @@
     [JSHAREService setDebug:NO];
 }
 -(void)setRootMainVC{
-/* 第一个版本
-        if (!kArrayIsEmpty(USERMANAGER.GT10CarArray)) {
-            CYTabBarController *GT_10Tabbar = [[CYTabBarController alloc]init];
-            [CYTabBarConfig shared].selectedTextColor = [UIColor colorWithRed:45/255. green:159/255. blue:254/255. alpha:1];
-
-            UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:[LocationVC new]];
-            UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:[CarListViewController new]];
-
-            AlarmListVC *listVC = [[AlarmListVC alloc]init];
-            listVC.selfType = All;
-            UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:listVC];
-
-            UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:[listenSoundVC new]];
-
-            [GT_10Tabbar addChildController:nav1 title:@"定位" imageName:@"底部_定位_N.png" selectedImageName:@"底部_定位_P.png"];
-            [GT_10Tabbar addChildController:nav2 title:@"列表" imageName:@"底部_列表_N.png"  selectedImageName:@"底部_列表_P.png"];
-            [GT_10Tabbar addChildController:nav3 title:@"警报信息" imageName:@"底部_警报信息_N.png"  selectedImageName:@"底部_警报信息_P.png"];
-            [GT_10Tabbar addChildController:nav4 title:@"声音监听" imageName:@"底部_声音监听_N.png"  selectedImageName:@"底部_声音监听_P.png"];
-            self.window.rootViewController = GT_10Tabbar;
-        }else{
-            HomeVC *homeVC = [[HomeVC alloc]init];
-            UINavigationController *nav = [[UINavigationController   alloc]initWithRootViewController:homeVC];
-            //默认开启系统右划返回
-            nav.interactivePopGestureRecognizer.enabled = NO;
-            self.window.rootViewController = nav;
-        }
- */
-/* 第二个版本
-    CYTabBarController *GT_10Tabbar = [[CYTabBarController alloc]init];
-    [CYTabBarConfig shared].selectedTextColor = [UIColor colorWithRed:45/255. green:159/255. blue:254/255. alpha:1];
-    
-    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:[LocationVC new]];
-    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:[CarListViewController new]];
-    
-    AlarmListVC *listVC = [[AlarmListVC alloc]init];
-    listVC.selfType = All;
-    UINavigationController *nav3 = [[UINavigationController alloc]initWithRootViewController:listVC];
-    
-    UINavigationController *nav4 = [[UINavigationController alloc]initWithRootViewController:[listenSoundVC new]];
-    
-    [GT_10Tabbar addChildController:nav1 title:@"定位" imageName:@"底部_定位_N.png" selectedImageName:@"底部_定位_P.png"];
-    [GT_10Tabbar addChildController:nav2 title:@"列表" imageName:@"底部_列表_N.png"  selectedImageName:@"底部_列表_P.png"];
-    [GT_10Tabbar addChildController:nav3 title:@"警报信息" imageName:@"底部_警报信息_N.png"  selectedImageName:@"底部_警报信息_P.png"];
-    [GT_10Tabbar addChildController:nav4 title:@"声音监听" imageName:@"底部_声音监听_N.png"  selectedImageName:@"底部_声音监听_P.png"];
-    self.window.rootViewController = GT_10Tabbar;
- */
     self.homeNavi = nil;
      self.homeNavi = [[UINavigationController alloc]initWithRootViewController:[TuPaiViewController new]];
     self.window.rootViewController =  self.homeNavi;
